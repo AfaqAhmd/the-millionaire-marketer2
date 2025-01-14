@@ -296,13 +296,14 @@
         display: flex;
         /* flex-direction: column; */
         margin-top: 30px;
+        justify-content: space-around;
       }
 
       /* .f-right:nth-child(1) {
         display: none;
       } */
       .footer-column {
-        min-width: 115px;
+        min-width: 110px;
       }
 
       .footer-bottom{
