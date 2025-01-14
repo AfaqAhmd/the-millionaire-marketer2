@@ -440,6 +440,9 @@
   margin-top: 80px;
   width: 90%;
 }
+.service-sec-2-cont div{
+  text-align: center;
+}
 .schedule-button {
 align-items: center;
 }
@@ -469,6 +472,9 @@ align-items: center;
 .book-right{
   width: 90%;
   margin: 5vh 0;
+}
+.book-right div{
+  text-align: center;
 }
 
 .book-right h2{
