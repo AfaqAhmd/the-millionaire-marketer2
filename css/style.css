@@ -834,6 +834,9 @@ width: 40%;
   color: #20374f;
   font-weight: 600;
 }
+  .subscribe-input:focus::placeholder {
+  color: transparent;
+  }
 
 
 .subscribe-button {
@@ -1239,6 +1242,9 @@ font-size: 3rem;
 
 .cont-input::placeholder{
   color: var(--blue);
+}
+.cont-input:focus::placeholder {
+  color: transparent;
 }
 
 .btn-cont-frm{

@@ -520,6 +520,9 @@ font-size: 2rem;
 
 /* ---------contact page-----*/
 
+.contact-hero{
+  margin-top: 6vh;
+}
 .contact-hero h2{
   font-size: 1.5rem;
 }
