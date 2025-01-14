@@ -3,7 +3,9 @@
 :root{
   --blue: #1e3650;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -232,7 +234,7 @@ nav a {
   object-fit: cover; /* Covers the div without distortion */
   transform: translate(-50%, -50%);
   z-index: 1;
-  opacity: 0.3;
+  opacity: 0.7;
   overflow: hidden;
 }
 .centerr{
@@ -908,7 +910,7 @@ width: 40%;
   margin: auto;
   padding: 5vw 5vw;
   background-color: var(--blue);
-  background-image: url('/images/pattern.png');     /* Replace with your image URL */
+  background-image: url('/images/pattern.png');   
   background-repeat: repeat;
   display: flex;
   justify-content: space-around;
@@ -1536,8 +1538,8 @@ color: var(--blue);
   width: 100%;
   margin: auto;
   padding: 5vw 6vw;
-    background-color: var(--blue);
-  background-image: url(/images/pattern.png);
+    /* background-color: var(--blue);
+  background-image: url(/images/pattern.png); */
   background-repeat: repeat;
   /* display: flex;
   justify-content: space-around; */
@@ -1546,6 +1548,7 @@ color: var(--blue);
 .four-p-head{
   text-align: center;
   margin-bottom: 3rem;
+  color: var(--blue);
 }
 .four-p h2{
  font-size: 3rem;
@@ -1570,6 +1573,7 @@ color: var(--blue);
 .four-p-card p{
   font-size: 25px;
   line-height: 1.5;
+  color: var(--blue);
 }
 
 
@@ -1580,12 +1584,12 @@ color: var(--blue);
   margin: auto;
   padding: 5vw 5vw;
   background: #d9d9d9;
-  /* background-color: #20374f; */
-  /* background-image: url('/images/pattern.png');      */
+  background-color: #20374f;
+  background-image: url('/images/pattern.png');     
   background-repeat: repeat;
   display: flex;
   justify-content: space-around;
-  color: var(--blue);
+  color: #d9d9d9;
   }
   
   .s-left{
