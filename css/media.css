@@ -305,6 +305,9 @@
       .footer-column {
         min-width: 110px;
       }
+      .footer-column h3 {
+        font-size: 14px;
+      }
 
       .footer-bottom{
         display: flex;
