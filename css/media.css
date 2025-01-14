@@ -53,8 +53,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw; /* Ensure it fills the width */
-    height: 100vw; /* Ensure it fills the height */
+    width: 100%; /* Ensure it fills the width */
+    height: 100%; /* Ensure it fills the height */
     object-fit: cover; /* Covers the div without distortion */
     transform: translate(-50%, -50%);
     z-index: 1;
