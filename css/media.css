@@ -1,0 +1,582 @@
+
+@media screen and (max-width: 600px) {
+
+ 
+
+    .upper-section {
+      width: 100%;
+      height: 80vh;
+      /* height: fit-content; */
+    }
+  
+    .upper-section video {
+      height: fit-content;
+    }
+    
+    .mobile-header {
+      display: block; /* Show mobile header */
+    }
+  
+    .mobile-menu.open {
+      display: block;
+    }
+  
+    /* Hide the donate button on mobile */
+    .mobile-menu{
+      display: none;
+    }
+  
+    /* Make menu text white */
+    .mobile-menu ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: "Poppins-medium", sans-serif;
+    }
+  
+    .mobile-menu ul {
+      list-style: none; /* Removes the dots */
+      padding: 0; /* Removes any default padding */
+      margin: 0; /* Removes any default margin */
+      line-height: 3;
+    }
+    .mobile-header nav {
+      border-radius: 0; /* Remove any border radius */
+      width: 100vw;
+    }
+
+
+
+    /* The video element */
+.upper-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw; /* Ensure it fills the width */
+    height: 100vw; /* Ensure it fills the height */
+    object-fit: cover; /* Covers the div without distortion */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.3;
+    overflow: hidden;
+  }
+    /* ---------------- */
+    
+
+    .cont-banner {
+        padding: 2vw 4vw;
+        color: white;
+        width: 90vw;
+        margin-top: 25vh;
+        position: absolute;
+        z-index: 99;
+      }
+      
+      .cont-banner h1 {
+        font-size: 2rem;
+      }
+      .cont-banner p {
+        font-size: 20px;
+      }
+      
+      .cont-links a {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+
+      /* ------potential-------- */
+    
+  
+  .content-wrapper {
+    width: 100%; /* Ensure it fills the section width */
+    padding: 0 2vw; /* Add side padding for responsiveness */
+  }
+  
+  .content-wrapper img{
+    height: 20vw;
+  }
+  
+  .potential h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .content-wrapper img{
+    height: 40vw;
+  }
+  .potential p {
+    font-size: 18px;
+  }
+
+  /* Help Section */
+.help-section {
+    height: auto;
+    background-position: right;    
+    flex-direction: column;
+  }
+  
+  .help-content {
+    width: 95%;
+    padding: 2vw;
+  }
+
+  .help-content h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  /* .help-content .highlight {
+    background-color: white;
+    color: var(--blue);
+    padding: 0 0.3rem;
+  } */
+  
+  .help-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+  }
+  .help-img {
+    flex: 1; 
+    text-align: center;
+  }
+  
+  .help-img img {
+    width: 90%;
+      height: auto;
+  }
+
+  /* Team Section */
+.team-section {
+  flex-direction: column;
+}
+
+.content-box {
+  margin: 20px;
+}
+.content-box h2 {
+  font-size: 2rem;
+}
+
+.team-img1 img{
+  /* float: inline-start; */
+  display: none;
+}
+.team-img2 img{
+  float: inline-end;
+}
+
+
+/* --------join section-------- */
+.join-section {
+  flex-direction: column;
+}
+
+.join-content{
+  /* margin-left: 0; */
+  margin-top: 150px;
+  margin-left: 0;
+  text-align: center;
+}
+.join-top{
+  left: 50px;
+}
+
+.join-top img{
+  width: 75%;
+}
+.join-img img{
+  width: 90%;
+  float: right
+}
+
+.join-content h2 {
+  font-size: 2.2rem;
+}
+.join-btn {
+  padding: 10px 0;
+  display: block;
+  font-size: 15px;
+}
+
+
+  /* testimonial section start  */
+
+.testimonials-section {
+    height: auto;
+  }
+
+  .testimonials-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px; /* Adjust width for better centering */
+  }
+  
+  .testimonials-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--blue);
+  }
+  .testimonial-card {
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    position: relative; /* To position the bottom bar */
+    overflow: hidden; /* Ensure no overflow from the box */
+  }
+  .testimonial-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--blue); 
+  }
+
+
+     
+
+  /* -------------footer-------*/
+    
+  .footer-uper{
+    padding: 4vw 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .f-uper-left{
+    width: 90%;
+    }
+    
+    .f-uper-left h2{
+      font-size: 2rem;
+    }
+    .f-uper-right{
+      width: 90%;
+    }
+    .f-uper-right img{
+        width: 300px;
+      }
+      .subscribe-container {
+        width: 320px;
+
+      }
+
+      .subscribe-input {
+        padding: 0 5px;
+        font-size: 16px;
+      }
+      .subscribe-button {
+       font-size: 12px;
+       float: right;
+       padding: 8px 6px;
+      }
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .f-left{
+        width: 90vw;
+      }
+      
+      .f-right{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+      }
+
+      .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        align-items: center;
+
+      }
+      .footer-bottom p {
+        font-size: 12px;
+      }
+
+      .footer-bottom ul {
+        gap: 15px;
+      }
+
+      .footer-bottom ul li a {
+        font-size: 12px;
+      }
+
+
+/* -----index end------- */
+.about-hero img{
+  width: 80vw;
+}
+
+.why-charles{
+  flex-direction: column-reverse;
+}
+.why-charles h2{
+  font-size: 2rem;
+}
+
+/* --------------- */
+
+.mission{
+  height: auto;
+}
+
+.mission-content {
+  flex-direction: column;
+  padding-top: 20px;
+}
+.mission-content h2{
+  font-size: 2rem;
+}
+.m-left{
+  width: 90%;
+}
+.m-right{
+  width: 90%;
+}
+.m-right img{
+  width: 300px;
+}
+
+/* ----------------- */
+.marketer-help {
+  padding: 20px;
+}
+.marketer-help-head h2{
+  font-size: 2.5rem;
+  color: #dedfd5;
+}
+.roadmap-v {
+  width: 300px;
+  height: 300px;
+}
+
+
+/* ------------------- */
+
+.leadership h2{
+  font-size: 1.5rem;
+}
+
+.leadership-cont{
+  flex-direction: column;
+  align-items: center;
+}
+.leader-card{
+  text-align: center;
+  width:70%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- */
+.dashaunna{
+  flex-direction: column-reverse;
+}
+.dashaunna h2{
+  font-size: 2rem;
+}
+.dashaunna div{
+  margin-top: 20px;
+}
+
+.dashaunna h2{
+  margin-bottom: 20px;
+  text-align: center;
+
+}  
+
+
+/* ---------coaching page------ */
+
+.one-on-one{
+  flex-direction: column;
+}
+
+.one-on-one h2{
+  font-size:2rem ;
+  text-align: center;
+}
+
+.one-on-one img{
+  margin-top:50px ;
+  width: 75%;
+}
+/* --------- */
+
+.service-sec-2{
+  flex-direction: column;
+}
+.service-sec-2-cont h2{
+  font-size: 2rem;
+ }
+ .service-sec-2-cont{
+  margin-top: 80px;
+  width: 90%;
+}
+.schedule-button {
+align-items: center;
+}
+
+/* -------- */
+
+.business-transform{
+  flex-direction: column;
+}
+.b-t-left{
+  width: 90%;
+}
+.b-t-right {
+  width: 90%;
+}
+
+/* ----------- */
+
+.book{
+  flex-direction: column-reverse;
+}
+
+.book-left{
+  width: 100%;
+}
+
+.book-right{
+  width: 90%;
+  margin-top: 5vh;
+}
+
+.book-right h2{
+font-size: 2rem;
+}
+
+.book-left img{
+  width: 100%;
+}
+
+/* --------academy page------- */
+.four-p{
+  padding: 3vw;
+}
+.four-p h2{
+  font-size: 2rem;
+}
+.four-p-card p{
+  font-size: 22px;
+}
+
+.four-p-card img{
+  width: 90%;
+}
+
+.section-video{
+  flex-direction: column;
+  padding: 1vw 8vw;
+}
+.s-left{
+  width: 90%;
+  margin-top: 1rem;
+}
+.s-left h2{
+  font-size:2rem ;
+}
+.s-right {
+  width: 90%;
+}
+
+.convo-v {
+  width: 100%;
+  margin-top: 30px;
+  align-items: center;
+}
+
+/* --------------- */
+
+
+.marketing-mastery-cont{
+  margin-top:26vh ;
+  width: 90%;
+}
+
+.marketing-mastery-sub{
+  margin-top: 20px;
+
+}
+.marketing-mastery h2{
+  font-size: 2rem;
+}
+
+/* ---------contact page-----*/
+
+.contact-hero h2{
+  font-size: 1.5rem;
+}
+
+.contact-main{
+  flex-direction: column;
+}
+.cont-m-left{
+  width: 100%;
+  padding: 2vw;
+}
+.cont-m-right{
+  width: 80%;
+  margin: auto;
+}
+.cont-input{
+  width: 100%;
+}
+
+.cont-m-right img{
+  margin-top: 40px;
+  width: 270px;
+}
+
+
+/* Mobile Header Styles */
+
+.header{
+  display: none; 
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width){
+
+
+} */
