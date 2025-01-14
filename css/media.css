@@ -120,6 +120,7 @@
   .help-content {
     width: 95%;
     padding: 2vw;
+    text-align: center;
   }
 
   .help-content h2 {
@@ -168,7 +169,8 @@
   display: none;
 }
 .team-img2 img{
-  float: inline-end;
+  /* float: inline-end; */
+  display: none;
 }
 
 
@@ -257,6 +259,7 @@
     
     .f-uper-left h2{
       font-size: 2rem;
+      text-align: center;
     }
     .f-uper-right{
       width: 90%;
