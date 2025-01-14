@@ -270,6 +270,7 @@
       .subscribe-container {
         width: 320px;
         margin: auto;
+        margin-top: 20px;
 
       }
 
