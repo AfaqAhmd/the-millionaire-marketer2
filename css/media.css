@@ -448,7 +448,7 @@ align-items: center;
 /* ----------- */
 
 .book{
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .book-left{
@@ -457,7 +457,7 @@ align-items: center;
 
 .book-right{
   width: 90%;
-  margin-top: 5vh;
+  margin: 5vh 0;
 }
 
 .book-right h2{
@@ -466,6 +466,9 @@ font-size: 2rem;
 
 .book-left img{
   width: 100%;
+}
+
+.book-right a{
 }
 
 /* --------academy page------- */
