@@ -360,7 +360,8 @@
   width: 90%;
 }
 .m-right{
-  width: 90%;
+  width: 100%;
+  text-align: center;
 }
 .m-right img{
   width: 300px;
