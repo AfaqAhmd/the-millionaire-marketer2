@@ -70,7 +70,7 @@
         width: 90vw;
         margin-top: 15vh;
         position: absolute;
-        z-index: 99;
+        z-index: 1;
       }
       
       .cont-banner h1 {

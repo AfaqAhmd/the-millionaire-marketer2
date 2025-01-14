@@ -157,7 +157,7 @@ nav a {
   left: 0;
   width: 100%;
   transition: all 0.3s ease;
-  z-index: -99;
+  z-index: 99;
 }
 
 .mobile-menu.open {
@@ -281,7 +281,7 @@ nav a {
   width: 72vw;
   margin-top: 25vh;
   position: absolute;
-  z-index: 9;
+  z-index: 1;
 }
 
 .cont-banner h1 {
@@ -1168,7 +1168,7 @@ width: 40%;
 
 .contact-hero{
   position: absolute;
-  z-index: 98;
+  z-index: 1;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
