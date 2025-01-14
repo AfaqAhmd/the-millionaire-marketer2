@@ -340,7 +340,8 @@
   flex-direction: column-reverse;
 }
 .why-charles h2{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* --------------- */
@@ -360,8 +361,7 @@
   width: 90%;
 }
 .m-right{
-  width: 100%;
-  text-align: center;
+  width: 73%;
 }
 .m-right img{
   width: 300px;
