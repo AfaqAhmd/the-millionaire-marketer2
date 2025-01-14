@@ -225,7 +225,8 @@
   .testimonials-content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: var(--blue);
+    color: var(--blue); 
+    line-height: 1.5;
   }
   .testimonial-card {
     padding: 20px;
