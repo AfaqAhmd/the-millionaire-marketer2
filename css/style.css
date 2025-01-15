@@ -1682,4 +1682,19 @@ color: var(--blue);
 
 
 
+   /* ------ */
+   .btn-white{
+    background: white;
+    color: var(--blue);
+    padding: 15px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border: 0.5px solid white;
+   }
+
+   .btn-white:hover{
+    border: 2px solid black;
+    color: black;
+   }
 
