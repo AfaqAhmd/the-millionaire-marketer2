@@ -33,6 +33,7 @@
       font-size: 16px;
       font-weight: 600;
       font-family: "Poppins-medium", sans-serif;
+      display: block;
     }
   
     .mobile-menu ul {

@@ -88,6 +88,12 @@ nav a {
   font-family: "Arial", sans-serif;
 }
 
+nav ul li a:hover {
+  color: black;
+}
+nav ul li a.active {
+  color: black;
+}
 /* ---------- */
 
 
