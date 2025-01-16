@@ -3,9 +3,11 @@
 :root{
   --blue: #1e3650;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -921,7 +923,7 @@ width: 40%;
 .mission-content {
   position: relative;
   z-index: 2;
-  padding: 2vw 4vw;
+  padding: 10vw 4vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -944,7 +946,7 @@ width: 40%;
 }
 
 .m-left{
-  width: 40%;
+  width: 60%;
 }
 .m-right{
   width: 30%;
