@@ -1653,3 +1653,22 @@ color: var(--blue);
     color: black;
    }
 
+   /* ------ */
+   .btn-square {
+    background-color: var(--blue);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: 1.5px solid var(--blue);
+  }
+  
+  .btn-square:hover {
+    color: var(--blue) !important;
+    background-color: #fff;
+    border: 1.5px solid var(--blue);
+  }
+
