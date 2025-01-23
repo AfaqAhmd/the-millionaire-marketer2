@@ -12,11 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $name = strip_tags(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $subject = trim($_POST["org"]);
+    $org = trim($_POST["org"]);
     $number = trim($_POST["number"]);
+    $subject = "From TMM Website";
     $message = trim($_POST["message"]);
     // Check if data is valid
-    if (empty($name) || empty($subject) || empty($message) || empty($number) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (empty($name) || empty($org) || empty($message) || empty($number) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
         echo "Please complete the form and try again.";
         exit;
@@ -41,7 +42,7 @@ try {
 
     //Recipients
     $mail->setFrom('afaqahmed468@gmail.com', $name);
-    $mail->addAddress('afaqahmed468@gmail.com', 'TMM');     //Add a recipient
+    $mail->addAddress('afaqahmed468@gmail.com', 'Form TMM Website');     //Add a recipient
     // $mail->addReplyTo('afaqkhan20@yahoo.com', 'Reply-To Name');     //reply to address
     
     
@@ -52,7 +53,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $subject;
-    $mail->Body    ="Name = ".$name . '<br>' . "Email = ".$email . '<br>' . "Number = ".$number . '<br>'."Messege = ". $message      ;
+    $mail->Body    ="Name = ".$name . '<br>' . "Email = ".$email . '<br>' . "Subject = ".$subject . '<br>' ."Organization = ".$org . '<br>' . "Number = ".$number . '<br>'."Messege = ". $message      ;
     
     
     

@@ -74,7 +74,7 @@
             <h2>Learn More:</h2>
             <p>Please complete the form below, <br> and we will respond within 
                 48 hours.</p>
-                  <form action="send-e.php" method="POST">
+                  <form id="myform" action="send-e.php" method="POST">
                     <input type="text" name="name" placeholder="Name" required class="cont-input">
                     <input type="text" name="org" placeholder="Organization" required class="cont-input">
                     <input type="tel" name="number" placeholder="Phone" required class="cont-input">
@@ -82,6 +82,11 @@
                     <textarea placeholder="Your Message" name="message" required cols="20" rows="6"  class="cont-input"></textarea>                    
                     <input type="submit" value="Send Message" class="btn-cont-frm">
                   </form>
+
+                  <div id="thank_you" style="display: block;">
+                    <p>Thanks for filling out the form!</p>
+               </div>
+
         </div>
 
         <div class="cont-m-right">

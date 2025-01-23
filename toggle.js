@@ -24,3 +24,12 @@ document.querySelectorAll('nav ul li a').forEach(link => {
   }
 });
 
+
+const form = document.getElementById('myform');
+const thankYouMessage = document.getElementById('thank_you');
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent form submission from refreshing the page
+  thankYouMessage.style.display = 'block'; // Show the thank-you message
+  form.reset(); // Optional: Reset the form fields
+});
