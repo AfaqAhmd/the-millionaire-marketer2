@@ -83,9 +83,13 @@
                     <input type="submit" value="Send Message" class="btn-cont-frm">
                   </form>
 
-                  <div id="thank_you" style="display: block;">
+                  <!-- <div id="thank_you" style="display: block;">
                     <p>Thanks for filling out the form!</p>
-               </div>
+               </div> -->
+
+               <?php if (!empty($thankYouMessage)): ?>
+               <p class="thank-you"><?php echo htmlspecialchars($thankYouMessage); ?></p>
+               <?php endif; ?>
 
         </div>
 

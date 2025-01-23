@@ -43,7 +43,7 @@ try {
     //Recipients
     $mail->setFrom('afaqahmed468@gmail.com', $name);
     $mail->addAddress('afaqahmed468@gmail.com', 'Form TMM Website');     //Add a recipient
-    // $mail->addReplyTo('afaqkhan20@yahoo.com', 'Reply-To Name');     //reply to address
+    // $mail->addReplyTo('---------20@yahoo.com', 'Reply-To Name');     //reply to address
     
     
     //Attachments
@@ -63,13 +63,15 @@ try {
     
     $mail->send();
     echo 'Message has been sent';
-    header ("Location: contact.html");
+    $thankYouMessage = 'Thank you for your submission!';
+    // header ("Location: contact.html");
+    header('Location: ' . $_SERVER['PHP_SELF']);
 
 }
 
 
  catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    $thankYouMessage = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 }
 
