@@ -74,13 +74,13 @@
             <h2>Learn More:</h2>
             <p>Please complete the form below, <br> and we will respond within 
                 48 hours.</p>
-                  <form>
-                    <input type="text" placeholder="Name" required class="cont-input">
-                    <input type="text" placeholder="Organization" required class="cont-input">
-                    <input type="tel" placeholder="Phone" required class="cont-input">
-                    <input type="email" placeholder="Email Address" required class="cont-input">
-                    <textarea placeholder="Your Message" required cols="20" rows="6"  class="cont-input"></textarea>                    
-                    <input type="submit" value="Submit" class="btn-cont-frm">
+                  <form action="send-e.php" method="POST">
+                    <input type="text" name="name" placeholder="Name" required class="cont-input">
+                    <input type="text" name="org" placeholder="Organization" required class="cont-input">
+                    <input type="tel" name="number" placeholder="Phone" required class="cont-input">
+                    <input type="email" name="email" placeholder="Email Address" required class="cont-input">
+                    <textarea placeholder="Your Message" name="message" required cols="20" rows="6"  class="cont-input"></textarea>                    
+                    <input type="submit" value="Send Message" class="btn-cont-frm">
                   </form>
         </div>
 
