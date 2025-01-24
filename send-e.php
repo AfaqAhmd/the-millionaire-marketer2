@@ -35,14 +35,14 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'afaqahmed468@gmail.com';                     //SMTP username
+    $mail->Username   = 'tmm.support@crtmm.com';                     //SMTP username
     $mail->Password   = '';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->setFrom('no-reply@TMM.com', $name);
-    $mail->addAddress('afaqahmed468@gmail.com', 'From TMM Website');     //Add a recipient
+    $mail->addAddress('tmm.support@crtmm.com', 'From TMM Website');     //Add a recipient
     // $mail->addReplyTo('---------20@yahoo.com', 'Reply-To Name');     //reply to address
     
     
