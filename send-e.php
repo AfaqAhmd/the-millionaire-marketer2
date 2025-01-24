@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if data is valid
     if (empty($name) || empty($org) || empty($message) || empty($number) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
-        echo "Please complete the form and try again.";
+        echo json_encode(["success" => false, "message" => "Invalid form input. Please try again."]);
         exit;
     }
 
@@ -31,18 +31,18 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'afaqahmed468@gmail.com';                     //SMTP username
-    $mail->Password   = '';                               //SMTP password
+    $mail->Password   = 'boou abeu fwyt eguh';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('afaqahmed468@gmail.com', $name);
-    $mail->addAddress('afaqahmed468@gmail.com', 'Form TMM Website');     //Add a recipient
+    $mail->setFrom('no-reply@TMM.com', $name);
+    $mail->addAddress('afaqahmed468@gmail.com', 'From TMM Website');     //Add a recipient
     // $mail->addReplyTo('---------20@yahoo.com', 'Reply-To Name');     //reply to address
     
     
@@ -53,8 +53,14 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $subject;
-    $mail->Body    ="Name = ".$name . '<br>' . "Email = ".$email . '<br>' . "Subject = ".$subject . '<br>' ."Organization = ".$org . '<br>' . "Number = ".$number . '<br>'."Messege = ". $message      ;
-    
+    $mail->Body    ="
+            <h2>New Contact Form Submission</h2>
+            <p><strong>Name:</strong> {$name}</p>
+            <p><strong>Email:</strong> {$email}</p>
+            <p><strong>Organization:</strong> {$org}</p>
+            <p><strong>Phone Number:</strong> {$number}</p>
+            <p><strong>Message:</strong> {$message}</p>
+        ";
     
     
     
@@ -62,21 +68,25 @@ try {
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
     $mail->send();
-    echo 'Message has been sent';
-    $thankYouMessage = 'Thank you for your submission!';
+    http_response_code(200);
+    header('Content-Type: application/json; charset=UTF-8');
+    echo json_encode(["success" => true, "message" => "Form submitted successfully!"]);
+    exit;
+
     // header ("Location: contact.html");
-    header('Location: ' . $_SERVER['PHP_SELF']);
+    // header('Location: ' . $_SERVER['PHP_SELF']);
 
 }
 
 
  catch (Exception $e) {
-    $thankYouMessage = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    http_response_code(500);
+        echo json_encode(["success" => false, "message" => "Mailer Error: {$mail->ErrorInfo}"]);
 }
 }
 
 else {
     http_response_code(403);
-     header ("Location: contact.html");
+    echo json_encode(["success" => false, "message" => "Forbidden: Invalid request method."]);
 }
 ?>
