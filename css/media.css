@@ -340,6 +340,11 @@
 .about-hero img{
   width: 80vw;
 }
+.vsl-video {
+  width: 325px;
+  height: 325px;
+  z-index: 999;
+}
 
 .why-charles{
   flex-direction: column-reverse;
