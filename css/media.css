@@ -166,6 +166,7 @@
   /* Team Section */
 .team-section {
   flex-direction: column;
+  background: transparent;
 }
 
 .content-box {
