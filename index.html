@@ -68,11 +68,13 @@
       <!-- -------------------------- -->
 
 
-      <video id="myVideo" autoplay loop>
+      <video autoplay loop muted id="myVideo">
         <source src="images/homevideo2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <button id="muteButton">Mute</button> 
+
+        
+      <button id="muteButton">Unmute</button>
 
       <div class="cont-banner">
         <h1>Empowering you <br> to Win</h1>
@@ -319,7 +321,7 @@
         </div>
       </footer>
 
-      <script>
+      <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
             const video = document.getElementById("myVideo");
             const muteButton = document.getElementById("muteButton");
@@ -338,6 +340,39 @@
                 }
             });
         });
-    </script>
+
+       
+        
+    </script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const video = document.getElementById("myVideo");
+          const muteButton = document.getElementById("muteButton");
+
+          // The video starts muted
+          video.muted = true; // Ensure video is muted initially
+
+          // Add event listener to start video when the user interacts with the page
+          document.body.addEventListener("click", function() {
+              // Play the video after the first click anywhere on the page
+              video.play().catch(function(error) {
+                  console.log("Video failed to play automatically:", error);
+              });
+          });
+
+          // Toggle mute/unmute on button click
+          muteButton.addEventListener("click", function() {
+              if (video.muted) {
+                  video.muted = false; // Unmute the video
+                  muteButton.textContent = "Mute"; // Change button text to "Mute"
+              } else {
+                  video.muted = true; // Mute the video
+                  muteButton.textContent = "Unmute"; // Change button text to "Unmute"
+              }
+          });
+      });
+  </script>
+
+   
   </body>
 </html>
