@@ -865,7 +865,7 @@ width: 40%;
   object-position: center;
   /* transform: rotate(90deg); */
   z-index: 9;
-  opacity: 0 !important;
+  opacity: 1 !important;
 }
 
 /* ----------------- */
