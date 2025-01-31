@@ -68,10 +68,11 @@
       <!-- -------------------------- -->
 
 
-      <video autoplay loop>
+      <video id="myVideo" autoplay loop>
         <source src="images/homevideo2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <button id="muteButton">Mute</button> 
 
       <div class="cont-banner">
         <h1>Empowering you <br> to Win</h1>
@@ -317,5 +318,26 @@
         </div>
         </div>
       </footer>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const video = document.getElementById("myVideo");
+            const muteButton = document.getElementById("muteButton");
+
+            // Ensure the video starts unmuted
+            video.muted = false;
+
+            muteButton.addEventListener("click", function() {
+                // Toggle mute and change button text
+                if (video.muted) {
+                    video.muted = false;
+                    muteButton.textContent = "Mute";
+                } else {
+                    video.muted = true;
+                    muteButton.textContent = "Unmute";
+                }
+            });
+        });
+    </script>
   </body>
 </html>
