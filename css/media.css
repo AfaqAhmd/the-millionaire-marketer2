@@ -101,6 +101,12 @@
   .content-wrapper img{
     height: 20vw;
   }
+  .vsl-video-home {
+    width: 325px;
+    height: 325px;
+    z-index: 999;
+    opacity: 0.8 !important;
+  }
   
   .potential h2 {
     font-size: 2rem;
