@@ -344,6 +344,7 @@
   width: 325px;
   height: 325px;
   z-index: 999;
+  opacity: 0 !important;
 }
 
 .why-charles{
