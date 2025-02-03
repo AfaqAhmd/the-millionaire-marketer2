@@ -346,8 +346,8 @@
 
 
 /* -----index end------- */
-.about-hero img{
-  width: 80vw;
+.about-hero{
+  height: 70vh;
 }
 .vsl-video {
   max-width: 350px;
