@@ -101,23 +101,15 @@
   .content-wrapper img{
     height: 20vw;
   }
-  /* .vsl-video-home {
+  .vsl-video-home {
     max-width: 350px;
     width: 100%;
     height: auto;
     z-index: 99;
     opacity: 0.8 !important;
-  } */
+  }
 
-  .vsl-video-home {
-  max-width: 100%; 
-  height: auto; 
-}
-   .vsl-video-home video { 
-    width: 100%; height: auto;
-     max-height: 100%; object-fit:
-      contain; 
-    }
+  
   
   .potential h2 {
     font-size: 2rem;
