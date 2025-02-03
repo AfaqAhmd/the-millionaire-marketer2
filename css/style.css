@@ -1732,8 +1732,3 @@ color: var(--blue);
   background-color: var(--blue);
 }
 
-.vsl-video-home:fullscreen {
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
-}
