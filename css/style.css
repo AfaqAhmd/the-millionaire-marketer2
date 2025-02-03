@@ -91,7 +91,7 @@ nav ul li a.active {
   width: 100%;
   background-color: #1E3650; /* Updated background color */
   position: relative;
-  z-index: 99;
+  z-index: 999;
 }
 
 
@@ -321,7 +321,7 @@ nav ul li a.active {
   object-fit: cover;
   object-position: center;
   /* transform: rotate(90deg); */
-  z-index: 9;
+  z-index: 8;
   opacity: 1 !important;
 }
 
