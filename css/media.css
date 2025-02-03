@@ -353,7 +353,7 @@
   max-width: 350px;
   width: 100%;
   height: auto;
-  z-index: 999;
+  z-index: 9;
   opacity: 0.8 !important;
 }
 
