@@ -40,6 +40,10 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
+
+    // google app password for tmm SMTP is mention below
+    // boou abeu fwyt eguh
+
     //Recipients
     $mail->setFrom('no-reply@TMM.com', $name);
     $mail->addAddress('tmm.support@crtmm.com', 'From TMM Website');     //Add a recipient
