@@ -350,8 +350,9 @@
   width: 80vw;
 }
 .vsl-video {
-  width: 325px;
-  height: 325px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
   z-index: 999;
   opacity: 0.8 !important;
 }
