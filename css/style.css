@@ -151,7 +151,7 @@ nav ul li a.active {
   left: 0;
   width: 100%;
   transition: all 0.3s ease;
-  z-index: 99;
+  z-index: 999;
 }
 
 .mobile-menu.open {
