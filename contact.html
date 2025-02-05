@@ -83,13 +83,11 @@
                     <input type="submit" value="Send Message" class="btn-cont-frm">
                   </form>
 
-                  <!-- <div id="thank_you" style="display: block;">
-                    <p>Thanks for filling out the form!</p>
-               </div> -->
+                  <p id="thankYouMessage" style="display: none; padding-top: 30px;"></p>
 
-               <?php if (!empty($thankYouMessage)): ?>
+               <!-- <?php if (!empty($thankYouMessage)): ?>
                <p class="thank-you"><?php echo htmlspecialchars($thankYouMessage); ?></p>
-               <?php endif; ?>
+               <?php endif; ?> -->
 
         </div>
 
@@ -186,7 +184,7 @@
 
       <!-- -------------------JaveScript code for thank-you message---- -->
       <script>
-        document.getElementById('contactForm').addEventListener('submit', async function (event) {
+        document.getElementById('myform').addEventListener('submit', async function (event) {
           event.preventDefault(); // Prevent default form submission
   
           const form = event.target; // Get the form element
