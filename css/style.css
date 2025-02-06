@@ -631,7 +631,7 @@ float: inline-start;
 }
 
 .testimonial-card h3 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-bottom: 5px;
   color: var(--blue); 
 }
